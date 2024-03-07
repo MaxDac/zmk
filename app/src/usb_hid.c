@@ -56,7 +56,7 @@ static int zmk_usb_hid_init(const struct device *_arg) {
     }
 
     usb_hid_register_device(hid_dev, zmk_hid_report_desc, sizeof(zmk_hid_report_desc), &ops);
-    usb_hid_init(hid_dev);
+    // usb_hid_init(hid_dev);
 
     return 0;
 }
